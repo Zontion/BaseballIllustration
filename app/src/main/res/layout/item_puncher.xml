@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/cl_item_puncher"
+    android:background="@color/color_baseball_player_black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_puncher_name"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textColor="@color/color_white"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cl_puncher"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_puncher"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_puncher_name"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_level_type"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/baseball_leveltype"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/cl_puncher_info"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_puncher_info"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@id/tv_level_type"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_strength"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/cl_pass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cl_punch">
+
+                <TextView
+                    android:id="@+id/title_strength"
+                    android:layout_width="25dp"
+                    android:layout_height="0dp"
+                    android:text="@string/baseball_str_single_word"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_strength"/>
+
+                <TextView
+                    android:id="@+id/tv_strength"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/title_strength"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_punch"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/cl_defence"
+                app:layout_constraintStart_toEndOf="@id/cl_strength"
+                app:layout_constraintEnd_toStartOf="@id/cl_speed">
+
+                <TextView
+                    android:id="@+id/title_punch"
+                    android:layout_width="25dp"
+                    android:layout_height="0dp"
+                    android:text="@string/baseball_punch_single_word"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_punch"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_punch"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/title_punch"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_speed"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/cl_none"
+                app:layout_constraintStart_toEndOf="@id/cl_punch"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/title_speed"
+                    android:layout_width="25dp"
+                    android:layout_height="0dp"
+                    android:text="@string/baseball_speed_single_word"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_speed"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_speed"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/title_speed"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_pass"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toBottomOf="@id/cl_strength"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/cl_defence">
+
+                <TextView
+                    android:id="@+id/title_pass"
+                    android:layout_width="25dp"
+                    android:layout_height="0dp"
+                    android:text="@string/baseball_pass_single_word"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_pass"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_pass"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/title_pass"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_defence"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toBottomOf="@id/cl_punch"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cl_pass"
+                app:layout_constraintEnd_toStartOf="@id/cl_none">
+
+                <TextView
+                    android:id="@+id/title_defence"
+                    android:layout_width="25dp"
+                    android:layout_height="0dp"
+                    android:text="@string/baseball_defence_single_word"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_defence"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_defence"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/color_white"
+                    android:gravity="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/title_defence"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_none"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                app:layout_constraintTop_toBottomOf="@id/cl_speed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cl_defence"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">BaseballIllustration</string>
+
+    <string name="baseball_strength">力量</string>
+    <string name="baseball_punch">打擊</string>
+    <string name="baseball_speed">速度</string>
+    <string name="baseball_pass">傳球</string>
+    <string name="baseball_defence">守備</string>
+    <string name="baseball_control">控球</string>
+    <string name="baseball_fast">直球</string>
+    <string name="baseball_breaking">變化</string>
+
+    <string name="baseball_str_single_word">力</string>
+    <string name="baseball_punch_single_word">打</string>
+    <string name="baseball_speed_single_word">速</string>
+    <string name="baseball_pass_single_word">傳</string>
+    <string name="baseball_defence_single_word">守</string>
+    <string name="baseball_control_single_word">控</string>
+    <string name="baseball_fast_single_word">直</string>
+    <string name="baseball_breaking_single_word">變</string>
+
+    <string name="baseball_leveltype">升級類型</string>
+
+    <string name="baseball_leveltype_ss">力速</string>
+    <string name="baseball_leveltype_sp">力傳</string>
+    <string name="baseball_leveltype_sd">力守</string>
+    <string name="baseball_leveltype_ps">打速</string>
+    <string name="baseball_leveltype_pp">打傳</string>
+    <string name="baseball_leveltype_pd">打守</string>
+
+    <string name="baseball_leveltype_keyA">A型</string>
+    <string name="baseball_leveltype_keyC">C型</string>
+    <string name="baseball_leveltype_keyD">D型</string>
+    <string name="baseball_leveltype_keyF">F型</string>
+    <string name="baseball_leveltype_keyS">S型</string>
+    <string name="baseball_leveltype_keyW">W型</string>
+    <string name="baseball_leveltype_keyX">X型</string>
+    <string name="baseball_leveltype_keyZ">Z型</string>
+
+    <string name="baseball_weather_none">無</string>
+    <string name="baseball_weather_sun">晴</string>
+    <string name="baseball_weather_cloud">陰</string>
+    <string name="baseball_weather_rain">雨</string>
+    <string name="baseball_weather_snow">雪</string>
+
+    <string name="baseball_filter_search">搜尋</string>
+</resources>
